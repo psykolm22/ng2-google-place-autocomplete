@@ -1,0 +1,61 @@
+ <input type="text" size="50" [(ngModel)] = "address" 
+ [options]='options' 
+ (setAddress) = "getAddress($event)"
+ (street_number) = 'street_number=$event'
+ (street)= 'street=$event'
+ (city)= 'city=$event'
+ (state)='state=$event'
+ (district)='district=$event'
+ (country)='country=$event'
+ (postal_code)='postal_code=$event'
+ (lat)='lat=$event' 
+ (lng)='lng=$event' 
+ (adr_address)='adr_address=$event' 
+ (name)='name=$event' 
+ (place_id)='place_id=$event' 
+ (scope)='scope=$event' 
+ (types)='types=$event' 
+ (url)='url=$event'  
+ (utc_offset)='utc_offset=$event' 
+ (vicinity)='vicinity=$event' 
+ (photos)='photos=$event' 
+id="autocomplete"
+ googleplace/> 
+ <input type="text" >
+
+
+    </table>
+<h5 >ngModel  : {{address}} </h5>   
+<h5 *ngIf='street_number'>street_number long_name : {{street_number.long_name}} </h5>   
+<h5 *ngIf='street_number' >street_number short_name : {{street_number.short_name}} </h5>     
+<h5 *ngIf='street' >street short_name : {{street.short_name}} </h5>    
+<h5 *ngIf='street' >street long_name : {{street.long_name}} </h5>    
+<h5 *ngIf='city' >city short_name : {{city.short_name}} </h5>    
+<h5 *ngIf='city' >city long_name : {{city.long_name}} </h5>    
+<h5 *ngIf='state' >state short_name : {{state.short_name}} </h5>    
+<h5 *ngIf='state' >state long_name : {{state.long_name}} </h5>    
+<h5 *ngIf='district' >district short_name : {{district.short_name}} </h5>    
+<h5 *ngIf='district' >district long_name : {{district.long_name}} </h5>    
+<h5 *ngIf='country' >country short_name : {{country.short_name}} </h5>    
+<h5 *ngIf='country' >country long_name : {{country.long_name}} </h5>    
+<h5 *ngIf='postal_code' >postal_code short_name : {{postal_code.short_name}} </h5>    
+<h5 *ngIf='postal_code' >postal_code long_name : {{postal_code.long_name}} </h5>    
+<h5>lat : {{lat}} </h5>
+<h5>lng : {{lng}} </h5> 
+<div [innerHTML]='adr_address'></div>
+<h5>html_attributions : {{html_attributions}} </h5>
+<h5>name : {{name}} </h5>
+<h5>place_id : {{place_id}} </h5>
+<h5>scope : {{scope}} </h5>
+<h5>types : {{types}} </h5>
+<a href='{{url}}'> {{url}} </a>
+<h5>utc_offset : {{utc_offset}} </h5>
+<h5>vicinity : {{vicinity}} </h5>
+<div *ngIf='photos'>
+<legend> Photos : </legend>
+<div  *ngFor="let photo of photos">
+   <div *ngFor="let url of photo.html_attributions" >
+       <div [innerHTML]="url"></div>
+   </div>
+</div>
+ </div>          
