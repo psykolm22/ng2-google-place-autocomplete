@@ -1,4 +1,4 @@
-# angular2-color-picker
+# ng2-google-place-autocomplete
 Google-Autocomplete-Angular2 Directive/Component <br/>
 This is a Google-Autocomplete Directive/Component for Angular 2.
 
