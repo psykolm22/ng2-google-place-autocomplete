@@ -78,14 +78,17 @@ var packages = {
 
 #Options
 Options for Google Search
-Choose one type from [ '(cities)', '(regions)',    'country', 'postal_code', 'sublocality', 'establishment', 'address', 'geocode']
-country ( dynamic change allow) : CountryCode ISO 3166-1 Alpha-2 ( see demo )
-```html
+* Choose one type from
+```
+  [ '(cities)', '(regions)', 'country', 'postal_code', 'sublocality', 'establishment', 'address', 'geocode'] 
+```  
+* country ( dynamic change allow) : CountryCode ISO 3166-1 Alpha-2 ( see demo )
+```html  
 [options]="{
     types: [],
     componentRestrictions: { country: 'FR' }
     }"
-
+```
 #Tested in:
 * Chrome
 * Firefox
