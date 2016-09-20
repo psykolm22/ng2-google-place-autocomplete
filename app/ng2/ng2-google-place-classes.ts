@@ -40,7 +40,8 @@ export class Photos{
      constructor(
         public height: string,
         public width: string,
-        public html_attributions: Array<string>
+        public html_attributions: Array<string>,
+        public getUrl:any
     ){}
 }
 export class AutoCompleteOptionsClass{

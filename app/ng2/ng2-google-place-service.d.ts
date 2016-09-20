@@ -1,19 +1,20 @@
 import { AddressComponent } from './ng2-google-place-classes';
 export declare class GooglePlaceService {
     constructor();
-    private find(address_components, query);
+    private find(address_components, query, val?);
     street_number(address_components: Array<AddressComponent>): any;
-    route(address_components: Array<AddressComponent>): any;
+    street(address_components: Array<AddressComponent>): any;
+    city(address_components: Array<AddressComponent>): any;
+    state(address_components: Array<AddressComponent>): any;
+    postal_code(address_components: Array<AddressComponent>): any;
+    country(address_components: Array<AddressComponent>): any;
+    administrative_area_level_2(address_components: Array<AddressComponent>): any;
     intersection(address_components: Array<AddressComponent>): any;
     political(address_components: Array<AddressComponent>): any;
-    country(address_components: Array<AddressComponent>): any;
-    administrative_area_level_1(address_components: Array<AddressComponent>): any;
-    administrative_area_level_2(address_components: Array<AddressComponent>): any;
     administrative_area_level_3(address_components: Array<AddressComponent>): any;
     administrative_area_level_4(address_components: Array<AddressComponent>): any;
     administrative_area_level_5(address_components: Array<AddressComponent>): any;
     colloquial_area(address_components: Array<AddressComponent>): any;
-    locality(address_components: Array<AddressComponent>): any;
     ward(address_components: Array<AddressComponent>): any;
     sublocality(address_components: Array<AddressComponent>): any;
     sublocality_level_1(address_components: Array<AddressComponent>): any;
@@ -24,7 +25,6 @@ export declare class GooglePlaceService {
     neighborhood(address_components: Array<AddressComponent>): any;
     premise(address_components: Array<AddressComponent>): any;
     subpremise(address_components: Array<AddressComponent>): any;
-    postal_code(address_components: Array<AddressComponent>): any;
     natural_feature(address_components: Array<AddressComponent>): any;
     airport(address_components: Array<AddressComponent>): any;
     park(address_components: Array<AddressComponent>): any;
@@ -38,4 +38,9 @@ export declare class GooglePlaceService {
     bus_station(address_components: Array<AddressComponent>): any;
     train_station(address_components: Array<AddressComponent>): any;
     transit_station(address_components: Array<AddressComponent>): any;
+    countryIsoCode(): {
+        Name: string;
+        Code: string;
+    }[];
+    TypesOptions(): string[];
 }

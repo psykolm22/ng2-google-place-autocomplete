@@ -38,10 +38,11 @@ var Location = (function () {
 }());
 exports.Location = Location;
 var Photos = (function () {
-    function Photos(height, width, html_attributions) {
+    function Photos(height, width, html_attributions, getUrl) {
         this.height = height;
         this.width = width;
         this.html_attributions = html_attributions;
+        this.getUrl = getUrl;
     }
     return Photos;
 }());

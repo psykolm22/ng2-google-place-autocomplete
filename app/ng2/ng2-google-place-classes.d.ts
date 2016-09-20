@@ -31,7 +31,8 @@ export declare class Photos {
     height: string;
     width: string;
     html_attributions: Array<string>;
-    constructor(height: string, width: string, html_attributions: Array<string>);
+    getUrl: any;
+    constructor(height: string, width: string, html_attributions: Array<string>, getUrl: any);
 }
 export declare class AutoCompleteOptionsClass {
     bounds: any;
