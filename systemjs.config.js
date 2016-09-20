@@ -25,7 +25,7 @@
       // other libraries
       'rxjs':                       'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
-      
+      'ng2-google-place-autocomplete': 'node_modules/ng2-google-place-autocomplete'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -39,7 +39,8 @@
       'angular2-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
-      }
+      },
+      "ng2-google-place-autocomplete": {main:'index.js', defaultExtension: 'js'}
     }
   });
 })(this);

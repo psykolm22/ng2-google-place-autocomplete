@@ -11,14 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
-var ng2_google_place_module_1 = require('./ng2/ng2-google-place-module');
+var ng2_google_place_autocomplete_1 = require('ng2-google-place-autocomplete');
 var forms_1 = require('@angular/forms');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, ng2_google_place_module_1.GooglePlaceModule],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, ng2_google_place_autocomplete_1.GooglePlaceModule],
             providers: [],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]

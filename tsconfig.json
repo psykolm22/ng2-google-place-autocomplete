@@ -9,5 +9,8 @@
     "removeComments": false,
     "noImplicitAny": false,
     "declaration": true
-    }
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }
