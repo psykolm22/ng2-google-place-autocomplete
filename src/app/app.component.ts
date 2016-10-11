@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector : 'app-root',
+    templateUrl: 'demo.html'
 })
 export class AppComponent {
-  title = 'app works!';
+    public options = {types: [],componentRestrictions: { country: 'FR' }}
+    getAddress(place:Object) {       
+           console.log("Address", place);
+       }
 }
+
+
+
