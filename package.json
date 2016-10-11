@@ -1,5 +1,6 @@
 {
   "name": "ng2-google-place-autocomplete",
+
   "version": "1.2.0",
   "license": "MIT",
   "angular-cli": {},
@@ -43,3 +44,4 @@
     "typescript": "2.0.2"
   }
 }
+ 
