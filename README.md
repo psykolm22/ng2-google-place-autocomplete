@@ -56,31 +56,6 @@ import {GooglePlaceModule} from 'ng2-google-place-autocomplete';
     ...
     import: [..., GooglePlaceModule]
 })
-
-```
-* Include GooglePlaceDirective in your component:
-```javascript
-import {Component} from '@angular/core';
-import {GooglePlaceDirective} from 'ng2-google-place-autocomplete';
-
-@Component({
-    selector: 'my-app',
-    templateUrl: 'app/***.html'
-})
-
-export class AppComponent {
-}
-```
-* Configure system.config.js
-```javascript
-var map = {
-        ...    
-        'ng2-google-place-autocomplete': 'node_modules/ng2-google-place-autocomplete'
-    };
-var packages = {
-        ...
-        'ng2-google-place-autocomplete': {main:'index.js', defaultExtension: 'js'}
-    };
 ```
 
 #Options

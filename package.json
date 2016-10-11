@@ -1,7 +1,7 @@
 {
   "name": "ng2-google-place-autocomplete",
 
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
