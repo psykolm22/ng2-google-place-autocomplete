@@ -12,7 +12,7 @@ Please fell free to declare issues or contribute  : https://github.com/psykolm22
 npm i --save ng2-google-place-autocomplete
 
 
-# DON'T FORGET TO ADD GOOGLE TO YOUR INDEX.HTML
+# Don't forget to add google api in your index.html
 * in your index.html:
 ```html
 <script  type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
@@ -104,4 +104,3 @@ Options for Google Search
 
 #For previous version of Angular 1:
 https://github.com/vskosp/vsGoogleAutocomplete
->>>>>>> 9033b92c90c3a86be64b43c74affc96b797e3b57
