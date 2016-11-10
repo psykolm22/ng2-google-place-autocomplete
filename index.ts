@@ -1,1 +1,3 @@
-export * from './src/app/shared/index'
+export {GooglePlaceModule} from './src/app/shared'
+
+
