@@ -6,7 +6,7 @@ This is a Google-Autocomplete Directive/Component for Angular 2.
 https://psykolm22.github.io/
 
 # GitHub
-Please fell free to declare issues or contribute  : https://github.com/psykolm22/ng2-google-place-autocomplete
+Please feel free to declare issues or contribute  : https://github.com/psykolm22/ng2-google-place-autocomplete
 
 # Installation
 npm i --save ng2-google-place-autocomplete

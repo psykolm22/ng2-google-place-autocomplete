@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {GooglePlaceModule} from './shared/ng2-google-place.module'
+import {GooglePlaceModule} from './ng2-google-place.module'
 
 @NgModule({
   declarations: [
