@@ -5,6 +5,12 @@
 /dist
 /tmp
 
+
+# example
+/src/app/app.*
+/src/app/demo.html
+main.ts
+
 # dependencies
 /node_modules
 /bower_components
