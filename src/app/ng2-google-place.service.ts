@@ -7,7 +7,7 @@ export class GooglePlaceService {
 
   
     private find(address_components:Array<AddressComponent>, query:string, val:string = null){
-        var res = null; 
+        
             for(var attr of address_components) {
                     for(var type of attr.types){
                             if (type == query){
@@ -15,7 +15,7 @@ export class GooglePlaceService {
                             }
                     }
             }
-            return res
+            return null;
     }
 
     street_number(address_components:Array<AddressComponent>) {

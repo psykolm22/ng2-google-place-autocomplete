@@ -8,7 +8,7 @@ declare var google:any;
 
 })
 export class GooglePlaceDirective implements OnInit {
-  @Input('options') options;
+  @Input('options') options:any;
 
   @Output() CountryCodes : EventEmitter<any>  = new EventEmitter();
   
@@ -99,8 +99,8 @@ export class GooglePlaceDirective implements OnInit {
     this.country.emit(this.service.country(place.address_components) ? this.service.country(place.address_components) : null) 
     this.postal_code.emit(this.service.postal_code(place.address_components) ? this.service.postal_code(place.address_components) : null) 
     this.district.emit(this.service.administrative_area_level_2(place.address_components) ? this.service.administrative_area_level_2(place.address_components) : null)
-    this.lat.emit(place.geometry.location.lat() ? place.geometry.location.lat() : null)
-    this.lng.emit(place.geometry.location.lng() ? place.geometry.location.lng() : null)
+    this.lat.emit(place.geometry.location.lat ? place.geometry.location.lat : null)
+    this.lng.emit(place.geometry.location.lng ? place.geometry.location.lng : null)
     this.adr_address.emit(place.adr_address ? place.adr_address : null)
     this.formatted_address.emit(place.formatted_address ? place.formatted_address : null)
     this.name.emit(place.name ? place.name : null)
