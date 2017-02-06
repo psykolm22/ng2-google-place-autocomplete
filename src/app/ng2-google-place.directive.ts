@@ -72,8 +72,10 @@ export class GooglePlaceDirective implements OnInit {
   
   trigger:any;
 
+  place:Address;
+  constructor(private el: ElementRef, private service: GooglePlaceService) {
 
-  constructor(private el: ElementRef, private service: GooglePlaceService) {}
+  }
 
   ngOnInit(){
    
@@ -82,38 +84,38 @@ export class GooglePlaceDirective implements OnInit {
 
    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, this.options);
    this.trigger = this.autocomplete.addListener('place_changed', () => {
-   var place = this.autocomplete.getPlace();
-   if (place && place.place_id){
-   this.invokeEvent(place)
+   this.place = this.autocomplete.getPlace();
+   if (this.place && this.place.place_id){
+   this.invokeEvent()
   }
 });
   }
 
-   invokeEvent(place: Address) {
-    this.setAddress.emit(place); 
+   invokeEvent() {
+    this.setAddress.emit(this.place); 
     
-    this.street_number.emit(this.service.street_number(place.address_components) ?this.service.street_number(place.address_components) : null)
-    this.street.emit(this.service.street(place.address_components) ? this.service.street(place.address_components) : null) 
-    this.city.emit(this.service.city(place.address_components) ? this.service.city(place.address_components) : null) 
-    this.state.emit(this.service.state(place.address_components) ? this.service.state(place.address_components) : null) 
-    this.country.emit(this.service.country(place.address_components) ? this.service.country(place.address_components) : null) 
-    this.postal_code.emit(this.service.postal_code(place.address_components) ? this.service.postal_code(place.address_components) : null) 
-    this.district.emit(this.service.administrative_area_level_2(place.address_components) ? this.service.administrative_area_level_2(place.address_components) : null)
-    this.lat.emit(place.geometry.location.lat() ? place.geometry.location.lat() : null)
-    this.lng.emit(place.geometry.location.lng() ? place.geometry.location.lng() : null)
-    this.adr_address.emit(place.adr_address ? place.adr_address : null)
-    this.formatted_address.emit(place.formatted_address ? place.formatted_address : null)
-    this.name.emit(place.name ? place.name : null)
-    this.place_id.emit(place.place_id ? place.place_id : null)
-    this.types.emit(place.types ? place.types : null)
-    this.url.emit(place.url ? place.url : null)
-    this.utc_offset.emit(place.utc_offset ? place.utc_offset : null)
-    this.vicinity.emit(place.vicinity ? place.vicinity : null)
-    this.photos.emit(place.photos ? place.photos : null)
+    this.street_number.emit(this.service.street_number(this.place.address_components) ?this.service.street_number(this.place.address_components) : null)
+    this.street.emit(this.service.street(this.place.address_components) ? this.service.street(this.place.address_components) : null) 
+    this.city.emit(this.service.city(this.place.address_components) ? this.service.city(this.place.address_components) : null) 
+    this.state.emit(this.service.state(this.place.address_components) ? this.service.state(this.place.address_components) : null) 
+    this.country.emit(this.service.country(this.place.address_components) ? this.service.country(this.place.address_components) : null) 
+    this.postal_code.emit(this.service.postal_code(this.place.address_components) ? this.service.postal_code(this.place.address_components) : null) 
+    this.district.emit(this.service.administrative_area_level_2(this.place.address_components) ? this.service.administrative_area_level_2(this.place.address_components) : null)
+    this.lat.emit(this.place.geometry.location.lat() ? this.place.geometry.location.lat() : null)
+    this.lng.emit(this.place.geometry.location.lng() ? this.place.geometry.location.lng() : null)
+    this.adr_address.emit(this.place.adr_address ? this.place.adr_address : null)
+    this.formatted_address.emit(this.place.formatted_address ? this.place.formatted_address : null)
+    this.name.emit(this.place.name ? this.place.name : null)
+    this.place_id.emit(this.place.place_id ? this.place.place_id : null)
+    this.types.emit(this.place.types ? this.place.types : null)
+    this.url.emit(this.place.url ? this.place.url : null)
+    this.utc_offset.emit(this.place.utc_offset ? this.place.utc_offset : null)
+    this.vicinity.emit(this.place.vicinity ? this.place.vicinity : null)
+    this.photos.emit(this.place.photos ? this.place.photos : null)
 
      /*
     DEPRECATED SINCE 2014  
-    place.id
+    this.place.id
     reference 
     */
 
@@ -121,39 +123,39 @@ export class GooglePlaceDirective implements OnInit {
     /*
     NOT USED YET 
 
-    this.intersection.emit(this.service.intersection(place.address_components) ? this.service.intersection(place.address_components) : null) 
-    this.political.emit(this.service.political(place.address_components) ? this.service.political(place.address_components) : null) 
-    this.colloquial_area.emit(this.service.colloquial_area(place.address_components) ? this.service.colloquial_area(place.address_components) : null) 
+    this.intersection.emit(this.service.intersection(this.place.address_components) ? this.service.intersection(this.place.address_components) : null) 
+    this.political.emit(this.service.political(this.place.address_components) ? this.service.political(this.place.address_components) : null) 
+    this.colloquial_area.emit(this.service.colloquial_area(this.place.address_components) ? this.service.colloquial_area(this.place.address_components) : null) 
     
-    this.ward.emit(this.service.ward(place.address_components) ? this.service.ward(place.address_components) : null) 
+    this.ward.emit(this.service.ward(this.place.address_components) ? this.service.ward(this.place.address_components) : null) 
     
-    this.administrative_area_level_3.emit(this.service.administrative_area_level_3(place.address_components) ? this.service.administrative_area_level_3(place.address_components) : null) 
-    this.administrative_area_level_4.emit(this.service.administrative_area_level_4(place.address_components) ? this.service.administrative_area_level_4(place.address_components) : null) 
-    this.administrative_area_level_5.emit(this.service.administrative_area_level_5(place.address_components) ? this.service.administrative_area_level_5(place.address_components) : null) 
+    this.administrative_area_level_3.emit(this.service.administrative_area_level_3(this.place.address_components) ? this.service.administrative_area_level_3(this.place.address_components) : null) 
+    this.administrative_area_level_4.emit(this.service.administrative_area_level_4(this.place.address_components) ? this.service.administrative_area_level_4(this.place.address_components) : null) 
+    this.administrative_area_level_5.emit(this.service.administrative_area_level_5(this.place.address_components) ? this.service.administrative_area_level_5(this.place.address_components) : null) 
     
-    this.sublocality.emit(this.service.sublocality(place.address_components) ? this.service.sublocality(place.address_components) : null) 
-    this.sublocality_level_1.emit(this.service.sublocality_level_1(place.address_components) ? this.service.sublocality_level_1(place.address_components) : null) 
-    this.sublocality_level_2.emit(this.service.sublocality_level_2(place.address_components) ? this.service.sublocality_level_2(place.address_components) : null) 
-    this.sublocality_level_3.emit(this.service.sublocality_level_3(place.address_components) ? this.service.sublocality_level_3(place.address_components) : null) 
-    this.sublocality_level_4.emit(this.service.sublocality_level_4(place.address_components) ? this.service.sublocality_level_4(place.address_components) : null) 
-    this.sublocality_level_5.emit(this.service.sublocality_level_5(place.address_components) ? this.service.sublocality_level_5(place.address_components) : null) 
+    this.sublocality.emit(this.service.sublocality(this.place.address_components) ? this.service.sublocality(this.place.address_components) : null) 
+    this.sublocality_level_1.emit(this.service.sublocality_level_1(this.place.address_components) ? this.service.sublocality_level_1(this.place.address_components) : null) 
+    this.sublocality_level_2.emit(this.service.sublocality_level_2(this.place.address_components) ? this.service.sublocality_level_2(this.place.address_components) : null) 
+    this.sublocality_level_3.emit(this.service.sublocality_level_3(this.place.address_components) ? this.service.sublocality_level_3(this.place.address_components) : null) 
+    this.sublocality_level_4.emit(this.service.sublocality_level_4(this.place.address_components) ? this.service.sublocality_level_4(this.place.address_components) : null) 
+    this.sublocality_level_5.emit(this.service.sublocality_level_5(this.place.address_components) ? this.service.sublocality_level_5(this.place.address_components) : null) 
     
-    this.neighborhood.emit(this.service.neighborhood(place.address_components) ? this.service.neighborhood(place.address_components) : null) 
-    this.premise.emit(this.service.premise(place.address_components) ? this.service.premise(place.address_components) : null) 
-    this.subpremise.emit(this.service.subpremise(place.address_components) ? this.service.subpremise(place.address_components) : null) 
-    this.natural_feature.emit(this.service.natural_feature(place.address_components) ? this.service.natural_feature(place.address_components) : null) 
-    this.airport.emit(this.service.airport(place.address_components) ? this.service.airport(place.address_components) : null) 
-    this.park.emit(this.service.park(place.address_components) ? this.service.park(place.address_components) : null) 
-    this.point_of_interest.emit(this.service.point_of_interest(place.address_components) ? this.service.point_of_interest(place.address_components) : null) 
-    this.floor.emit(this.service.floor(place.address_components) ? this.service.floor(place.address_components) : null) 
-    this.establishment.emit(this.service.establishment(place.address_components) ? this.service.establishment(place.address_components) : null) 
-    this.parking.emit(this.service.parking(place.address_components) ? this.service.parking(place.address_components) : null) 
-    this.post_box.emit(this.service.post_box(place.address_components) ? this.service.post_box(place.address_components) : null) 
-    this.postal_town.emit(this.service.postal_town(place.address_components) ? this.service.postal_town(place.address_components) : null) 
-    this.room.emit(this.service.room(place.address_components) ? this.service.room(place.address_components) : null) 
-    this.bus_station.emit(this.service.bus_station(place.address_components) ? this.service.bus_station(place.address_components) : null) 
-    this.train_station.emit(this.service.train_station(place.address_components) ? this.service.train_station(place.address_components) : null) 
-    this.transit_station.emit(this.service.transit_station(place.address_components) ? this.service.transit_station(place.address_components) : null) 
+    this.neighborhood.emit(this.service.neighborhood(this.place.address_components) ? this.service.neighborhood(this.place.address_components) : null) 
+    this.premise.emit(this.service.premise(this.place.address_components) ? this.service.premise(this.place.address_components) : null) 
+    this.subpremise.emit(this.service.subpremise(this.place.address_components) ? this.service.subpremise(this.place.address_components) : null) 
+    this.natural_feature.emit(this.service.natural_feature(this.place.address_components) ? this.service.natural_feature(this.place.address_components) : null) 
+    this.airport.emit(this.service.airport(this.place.address_components) ? this.service.airport(this.place.address_components) : null) 
+    this.park.emit(this.service.park(this.place.address_components) ? this.service.park(this.place.address_components) : null) 
+    this.point_of_interest.emit(this.service.point_of_interest(this.place.address_components) ? this.service.point_of_interest(this.place.address_components) : null) 
+    this.floor.emit(this.service.floor(this.place.address_components) ? this.service.floor(this.place.address_components) : null) 
+    this.establishment.emit(this.service.establishment(this.place.address_components) ? this.service.establishment(this.place.address_components) : null) 
+    this.parking.emit(this.service.parking(this.place.address_components) ? this.service.parking(this.place.address_components) : null) 
+    this.post_box.emit(this.service.post_box(this.place.address_components) ? this.service.post_box(this.place.address_components) : null) 
+    this.postal_town.emit(this.service.postal_town(this.place.address_components) ? this.service.postal_town(this.place.address_components) : null) 
+    this.room.emit(this.service.room(this.place.address_components) ? this.service.room(this.place.address_components) : null) 
+    this.bus_station.emit(this.service.bus_station(this.place.address_components) ? this.service.bus_station(this.place.address_components) : null) 
+    this.train_station.emit(this.service.train_station(this.place.address_components) ? this.service.train_station(this.place.address_components) : null) 
+    this.transit_station.emit(this.service.transit_station(this.place.address_components) ? this.service.transit_station(this.place.address_components) : null) 
     */
   
 }

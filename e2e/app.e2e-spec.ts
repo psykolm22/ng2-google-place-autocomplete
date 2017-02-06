@@ -1,10 +1,10 @@
-import { WebpackTestPage } from './app.po';
+import { Ng2GooglePlaceAutocompletePage } from './app.po';
 
-describe('webpack-test App', function() {
-  let page: WebpackTestPage;
+describe('ng2-google-place-autocomplete App', function() {
+  let page: Ng2GooglePlaceAutocompletePage;
 
   beforeEach(() => {
-    page = new WebpackTestPage();
+    page = new Ng2GooglePlaceAutocompletePage();
   });
 
   it('should display message saying app works', () => {

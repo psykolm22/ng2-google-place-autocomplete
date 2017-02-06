@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class WebpackTestPage {
+export class Ng2GooglePlaceAutocompletePage {
   navigateTo() {
     return browser.get('/');
   }
