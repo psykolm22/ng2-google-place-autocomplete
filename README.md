@@ -2,6 +2,8 @@
 Google-Autocomplete-Angular2 Directive/Component <br/>
 This is a Google-Autocomplete Directive/Component for Angular 2.
 
+#Build with angular-cli 1.0.0-beta.30 and @angular 2.4.6
+
 # Demo page
 https://psykolm22.github.io/
 
