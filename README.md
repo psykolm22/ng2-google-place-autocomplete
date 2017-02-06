@@ -10,6 +10,10 @@ https://psykolm22.github.io/
 # GitHub
 Please feel free to declare issues or contribute  : https://github.com/psykolm22/ng2-google-place-autocomplete
 
+# What about next Improvements ? 
+- Add support for [YARN](https://yarnpkg.com/) 
+
+
 # Installation
 npm i --save ng2-google-place-autocomplete
 
