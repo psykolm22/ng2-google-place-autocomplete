@@ -26,14 +26,14 @@ export class Address {
 export class Coordonate{
      constructor(
         public location: Location,
-        public viewport
+        public viewport: any
          ) { }
 }
 
 export class Location{
     constructor(
-        public lat,
-        public lng
+        public lat:any,
+        public lng:any 
     ){}
 }
 export class Photos{
@@ -47,7 +47,7 @@ export class Photos{
 export class AutoCompleteOptionsClass{
      constructor(
          //The area in which to search for places. Results are biased towards, but not restricted to, places contained within these bounds.
-        public bounds,
+        public bounds: any,
         //The component restrictions. Component restrictions are used to restrict predictions to only those within the parent component. E.g., the country.
         public componentRestrictions: componentRestrictions,
         //The types of predictions to be returned. For a list of supported types, see the developer's guide. If nothing is specified, all types are returned. In general only a single type is allowed. The exception is that you can safely mix the 'geocode' and 'establishment' types, but note that this will have the same effect as specifying no types.

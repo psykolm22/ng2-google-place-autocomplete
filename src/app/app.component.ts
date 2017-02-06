@@ -6,7 +6,7 @@ import { Component} from '@angular/core';
     templateUrl: './demo.html' 
 })
 export class AppComponent {
-    public options = {types: [],componentRestrictions: { country: 'FR' }}
+    public options = {types: ['address'],componentRestrictions: { country: 'FR' }}
     getAddress(place:Object) {       
            console.log("Address", place);
        }
