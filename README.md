@@ -3,7 +3,9 @@ Google-Autocomplete-Angular2 Directive/Component <br/>
 This is a Google-Autocomplete Directive/Component for Angular 2.
 
 #Build with angular-cli 1.0.0-beta.30 and @angular 2.4.6
-
+[![CircleCI](https://circleci.com/gh/psykolm22/ng2-google-place-autocomplete.svg?style=shield&circle-token=cf5e1c8f08d7d90c845e41ba20df0c8a6fc38892)]
+(https://github.com/psykolm22/ng2-google-place-autocomplete)
+[![Dependency Status](https://gemnasium.com/badges/github.com/psykolm22/ng2-google-place-autocomplete.svg)](https://gemnasium.com/github.com/psykolm22/ng2-google-place-autocomplete)
 # Demo page
 https://psykolm22.github.io/
 
