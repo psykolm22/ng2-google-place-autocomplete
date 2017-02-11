@@ -11,6 +11,23 @@
     "e2e": "protractor"
   },
   "private": false,
+  "dependencies": {
+     "@angular/common": "^2.4.6",
+    "@angular/compiler": "^2.4.6",
+    "@angular/compiler-cli": "^2.4.6",
+    "@angular/core": "^2.4.6",
+    "@angular/forms": "^2.4.6",
+    "@angular/http": "^2.4.6",
+    "@angular/platform-browser": "^2.4.6",
+    "@angular/platform-browser-dynamic": "^2.4.6",
+    "@angular/platform-server": "^2.4.6",
+    "@angular/router": "^3.4.6",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.1.0",
+    "ts-helpers": "^1.1.2",
+    "zone.js": "^0.7.6"
+
+  },
   "devDependencies": {  
     "@angular/common": "^2.4.6",
     "@angular/compiler": "^2.4.6",
