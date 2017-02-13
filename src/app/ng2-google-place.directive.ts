@@ -1,4 +1,4 @@
-import {Component, Directive, Input, Output, ElementRef, EventEmitter, OnInit} from '@angular/core';
+import {Component, Directive, Input, Output, NgZone, ElementRef, EventEmitter, OnInit} from '@angular/core';
 import {GooglePlaceService} from './ng2-google-place.service';
 import {Address} from './ng2-google-place.classes'
 declare var google:any;
@@ -9,12 +9,12 @@ declare var google:any;
 })
 export class GooglePlaceDirective implements OnInit {
   @Input('options') options:any;
-
+  
   @Output() CountryCodes : EventEmitter<any>  = new EventEmitter();
   
   @Output() setAddress : EventEmitter<any>  = new EventEmitter();
- 
-  @Output() street_number: EventEmitter<any>  = new EventEmitter();
+   @Output() street_number : EventEmitter<any>  = new EventEmitter();
+  
   @Output()  postal_code: EventEmitter<any>  = new EventEmitter();
   @Output() country : EventEmitter<any>  = new EventEmitter();
   @Output() lat : EventEmitter<any>  = new EventEmitter();
@@ -73,7 +73,7 @@ export class GooglePlaceDirective implements OnInit {
   trigger:any;
 
   place:Address;
-  constructor(private el: ElementRef, private service: GooglePlaceService) {
+  constructor(private el: ElementRef, private service: GooglePlaceService, private ngZone: NgZone) {
 
   }
 
@@ -84,18 +84,20 @@ export class GooglePlaceDirective implements OnInit {
 
    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, this.options);
    this.trigger = this.autocomplete.addListener('place_changed', () => {
+    this.ngZone.run(() => {
    this.place = this.autocomplete.getPlace();
    if (this.place && this.place.place_id){
    this.invokeEvent()
   }
+    });
 });
   }
 
+
    invokeEvent() {
     this.setAddress.emit(this.place); 
-    
-
-    this.street_number.emit(this.service.street_number(this.place.address_components) ?this.service.street_number(this.place.address_components) : null)
+  
+    this.street_number.emit(this.service.street_number(this.place.address_components) ? this.service.street_number(this.place.address_components) : null) 
     this.street.emit(this.service.street(this.place.address_components) ? this.service.street(this.place.address_components) : null) 
     this.city.emit(this.service.city(this.place.address_components) ? this.service.city(this.place.address_components) : null) 
     this.state.emit(this.service.state(this.place.address_components) ? this.service.state(this.place.address_components) : null) 

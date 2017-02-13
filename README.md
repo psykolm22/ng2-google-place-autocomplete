@@ -9,6 +9,9 @@ This is a Google-Autocomplete Directive/Component for Angular 2.
 (https://gemnasium.com/github.com/psykolm22/ng2-google-place-autocomplete)
 [![npm](http://img.shields.io/npm/v/ng2-google-place-autocomplete.svg?style=flat)]
 (https://www.npmjs.org/package/ng2-google-place-autocomplete)
+[![NPM](https://nodei.co/npm/ng2-google-place-autocomplete.png?downloads=true&downloadRank=true&stars=true)]
+(https://nodei.co/npm/ng2-google-place-autocomplete/)
+[![license](https://img.shields.io/github/license/psykolm22/ng2-google-place-autocomplete.svg)]()
 # Demo page
 https://psykolm22.github.io/
 
