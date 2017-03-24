@@ -2,16 +2,11 @@
 Google-Autocomplete-Angular2 Directive/Component <br/>
 This is a Google-Autocomplete Directive/Component for Angular 2.
 
+[![NPM](https://nodei.co/npm/ng2-google-place-autocomplete.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ng2-google-place-autocomplete/)
+
 #Build with angular-cli 1.0.0-beta.31 and @angular 2.4.7
-[![CircleCI](https://circleci.com/gh/psykolm22/ng2-google-place-autocomplete.svg?style=shield&circle-token=cf5e1c8f08d7d90c845e41ba20df0c8a6fc38892)]
-(https://github.com/psykolm22/ng2-google-place-autocomplete)
-[![devDependency Status](https://gemnasium.com/badges/github.com/psykolm22/ng2-google-place-autocomplete.svg)]
-(https://gemnasium.com/github.com/psykolm22/ng2-google-place-autocomplete)
-[![npm](http://img.shields.io/npm/v/ng2-google-place-autocomplete.svg?style=flat)]
-(https://www.npmjs.org/package/ng2-google-place-autocomplete)
-[![NPM](https://nodei.co/npm/ng2-google-place-autocomplete.png?downloads=true&downloadRank=true&stars=true)]
-(https://nodei.co/npm/ng2-google-place-autocomplete/)
-[![license](https://img.shields.io/github/license/psykolm22/ng2-google-place-autocomplete.svg)]()
+
+[![CircleCI](https://circleci.com/gh/psykolm22/ng2-google-place-autocomplete.svg?style=shield&circle-token=cf5e1c8f08d7d90c845e41ba20df0c8a6fc38892)](https://github.com/psykolm22/ng2-google-place-autocomplete) [![devDependency Status](https://gemnasium.com/badges/github.com/psykolm22/ng2-google-place-autocomplete.svg)](https://gemnasium.com/github.com/psykolm22/ng2-google-place-autocomplete) [![npm](http://img.shields.io/npm/v/ng2-google-place-autocomplete.svg?style=flat)](https://www.npmjs.org/package/ng2-google-place-autocomplete) [![license](https://img.shields.io/github/license/psykolm22/ng2-google-place-autocomplete.svg)]()
 # Demo page
 https://psykolm22.github.io/
 
@@ -19,12 +14,17 @@ https://psykolm22.github.io/
 Please feel free to declare issues or contribute  : https://github.com/psykolm22/ng2-google-place-autocomplete
 
 # What about next Improvements ? 
-- Add support for [YARN](https://yarnpkg.com/) 
-
+- ~~Add support for [YARN](https://yarnpkg.com/)~~ => DONE
 
 # Installation
-npm i --save ng2-google-place-autocomplete
 
+NPM
+
+    npm i --save ng2-google-place-autocomplete
+
+YARN
+
+    yarn add --save ng2-google-place-autocomplete
 
 # Don't forget to add google api in your index.html
 * in your index.html:
@@ -63,7 +63,7 @@ npm i --save ng2-google-place-autocomplete
 
 
 * Add GooglePlaceModule in your app.module.ts:
-```javascript
+```typeScript
 import {GooglePlaceModule} from 'ng2-google-place-autocomplete';
 
 @NgModule({
@@ -93,3 +93,7 @@ Options for Google Search
 
 #For previous version of Angular 1:
 https://github.com/vskosp/vsGoogleAutocomplete
+
+
+
+
