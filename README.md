@@ -5,6 +5,7 @@ This is a Google-Autocomplete Directive/Component for Angular 2.
 [![NPM](https://nodei.co/npm/ng2-google-place-autocomplete.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ng2-google-place-autocomplete/)
 
 #Build with angular-cli 1.0.0-beta.31 and @angular 2.4.7
+
 [![CircleCI](https://circleci.com/gh/psykolm22/ng2-google-place-autocomplete.svg?style=shield&circle-token=cf5e1c8f08d7d90c845e41ba20df0c8a6fc38892)](https://github.com/psykolm22/ng2-google-place-autocomplete) [![devDependency Status](https://gemnasium.com/badges/github.com/psykolm22/ng2-google-place-autocomplete.svg)](https://gemnasium.com/github.com/psykolm22/ng2-google-place-autocomplete) [![npm](http://img.shields.io/npm/v/ng2-google-place-autocomplete.svg?style=flat)](https://www.npmjs.org/package/ng2-google-place-autocomplete) [![license](https://img.shields.io/github/license/psykolm22/ng2-google-place-autocomplete.svg)]()
 # Demo page
 https://psykolm22.github.io/
