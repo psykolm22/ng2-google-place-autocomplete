@@ -1,0 +1,2548 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng2-google-place-autocomplete documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng2-google-place-autocomplete documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../">ng2-google-place-autocomplete documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/GooglePlaceModule.html" >GooglePlaceModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-directives-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/GooglePlaceDirective.html" >GooglePlaceDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Address.html" >Address</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AddressComponent.html" >AddressComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AutoCompleteOptionsClass.html" >AutoCompleteOptionsClass</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ComponentRestrictions.html" >ComponentRestrictions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Coordonate.html" >Coordonate</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Location.html" >Location</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Photos.html" >Photos</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/GooglePlaceService.html"  class="active" >GooglePlaceService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../">ng2-google-place-autocomplete documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/GooglePlaceModule.html" >GooglePlaceModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#directives-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/GooglePlaceDirective.html" >GooglePlaceDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Address.html" >Address</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AddressComponent.html" >AddressComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AutoCompleteOptionsClass.html" >AutoCompleteOptionsClass</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ComponentRestrictions.html" >ComponentRestrictions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Coordonate.html" >Coordonate</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Location.html" >Location</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Photos.html" >Photos</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/GooglePlaceService.html"  class="active" >GooglePlaceService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>GooglePlaceService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/ng2-google-place.service.ts</code>
+        </p>
+
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor()</code>
+                                </td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                <h3 id="methods">Methods</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Private</span> find</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock">
+                                            <span class="fa fa-lock"></span>
+                                        </span>
+                                    <code>find(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>, query: string, val: string)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> street_number</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>street_number(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> street</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>street(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> city</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>city(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> state</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>state(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> postal_code</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>postal_code(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> country</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>country(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> administrative_area_level_2</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>administrative_area_level_2(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> intersection</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>intersection(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> political</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>political(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> administrative_area_level_3</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>administrative_area_level_3(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> administrative_area_level_4</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>administrative_area_level_4(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> administrative_area_level_5</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>administrative_area_level_5(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> colloquial_area</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>colloquial_area(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> ward</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>ward(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality_level_1</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality_level_1(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality_level_2</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality_level_2(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality_level_3</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality_level_3(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality_level_4</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality_level_4(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> sublocality_level_5</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>sublocality_level_5(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> neighborhood</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>neighborhood(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> premise</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>premise(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> subpremise</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>subpremise(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> natural_feature</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>natural_feature(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> airport</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>airport(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> park</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>park(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> point_of_interest</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>point_of_interest(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> floor</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>floor(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> establishment</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>establishment(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> parking</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>parking(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> post_box</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>post_box(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> postal_town</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>postal_town(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> room</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>room(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> bus_station</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>bus_station(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> train_station</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>train_station(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> transit_station</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>transit_station(address_components: <a href="../classes/AddressComponent.html" >AddressComponent[]</a>)</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> countryIsoCode</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>countryIsoCode()</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> TypesOptions</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>TypesOptions()</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre><code class="hljs javascript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {AddressComponent} from &#x27;./ng2-google-place.classes&#x27;;
+
+@Injectable()
+export class GooglePlaceService {
+    constructor() { }
+
+
+    private find(address_components: Array&lt;AddressComponent&gt;, query: string, val: string &#x3D; null) {
+
+            for (let attr of address_components) {
+                    for (let type of attr.types) {
+                            if (type &#x3D;&#x3D;&#x3D; query) {
+                                return val ? attr[val] : attr;
+                            }
+                    }
+            }
+            return null;
+    }
+
+    street_number(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;street_number&#x27;, &#x27;long_name&#x27;);
+    }
+
+    street(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;route&#x27;, &#x27;long_name&#x27;);
+    }
+
+     city(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;locality&#x27;, &#x27;long_name&#x27;);
+    }
+
+     state(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;administrative_area_level_1&#x27;, &#x27;long_name&#x27;);
+    }
+
+     postal_code(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;postal_code&#x27;, &#x27;long_name&#x27;);
+    }
+    country(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;country&#x27;, &#x27;long_name&#x27;);
+    }
+    administrative_area_level_2(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;administrative_area_level_2&#x27;, &#x27;long_name&#x27;);
+    }
+
+
+
+
+    // MORE NOT USED YET /////
+    intersection(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;intersection&#x27;);
+    }
+
+    political(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;political&#x27;);
+    }
+    administrative_area_level_3(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;administrative_area_level_3&#x27;);
+    }
+    administrative_area_level_4(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;administrative_area_level_4&#x27;);
+    }
+    administrative_area_level_5(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;administrative_area_level_5&#x27;);
+    }
+    colloquial_area(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;colloquial_area&#x27;);
+    }
+
+    ward(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;ward&#x27;);
+    }
+    sublocality(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality&#x27;);
+    }
+    sublocality_level_1(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality_level_1&#x27;);
+    }
+    sublocality_level_2(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality_level_2&#x27;);
+    }
+    sublocality_level_3(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality_level_3&#x27;);
+    }
+    sublocality_level_4(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality_level_4&#x27;);
+    }
+    sublocality_level_5(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;sublocality_level_5&#x27;);
+    }
+    neighborhood(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;neighborhood&#x27;);
+    }
+    premise(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;premise&#x27;);
+    }
+    subpremise(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;subpremise&#x27;);
+    }
+
+    natural_feature(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;natural_feature&#x27;);
+    }
+    airport(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;airport&#x27;);
+    }
+
+   park(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;park&#x27;);
+    }
+
+    point_of_interest(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;point_of_interest&#x27;);
+    }
+      floor(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;floor&#x27;);
+    }
+
+    establishment(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;establishment&#x27;);
+    }
+      parking(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;parking&#x27;);
+    }
+
+    post_box(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;post_box&#x27;);
+    }
+      postal_town(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;postal_town&#x27;);
+    }
+
+    room(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;room&#x27;);
+    }
+
+    bus_station(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;bus_station&#x27;);
+    }
+
+    train_station(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;train_station&#x27;);
+    }
+     transit_station(address_components: Array&lt;AddressComponent&gt;) {
+        return this.find(address_components, &#x27;transit_station&#x27;);
+    }
+
+    /// return list ISO 3166-1 Alpha-2 country code
+    countryIsoCode() {
+        return [
+            {
+            Name: &#x27;Afghanistan&#x27;,
+            Code: &#x27;AF&#x27;
+            },
+            {
+            Name: &#x27;Åland Islands&#x27;,
+            Code: &#x27;AX&#x27;
+            },
+            {
+            Name: &#x27;Albania&#x27;,
+            Code: &#x27;AL&#x27;
+            },
+            {
+            Name: &#x27;Algeria&#x27;,
+            Code: &#x27;DZ&#x27;
+            },
+            {
+            Name: &#x27;American Samoa&#x27;,
+            Code: &#x27;AS&#x27;
+            },
+            {
+            Name: &#x27;Andorra&#x27;,
+            Code: &#x27;AD&#x27;
+            },
+            {
+            Name: &#x27;Angola&#x27;,
+            Code: &#x27;AO&#x27;
+            },
+            {
+            Name: &#x27;Anguilla&#x27;,
+            Code: &#x27;AI&#x27;
+            },
+            {
+            Name: &#x27;Antarctica&#x27;,
+            Code: &#x27;AQ&#x27;
+            },
+            {
+            Name: &#x27;Antigua and Barbuda&#x27;,
+            Code: &#x27;AG&#x27;
+            },
+            {
+            Name: &#x27;Argentina&#x27;,
+            Code: &#x27;AR&#x27;
+            },
+            {
+            Name: &#x27;Armenia&#x27;,
+            Code: &#x27;AM&#x27;
+            },
+            {
+            Name: &#x27;Aruba&#x27;,
+            Code: &#x27;AW&#x27;
+            },
+            {
+            Name: &#x27;Australia&#x27;,
+            Code: &#x27;AU&#x27;
+            },
+            {
+            Name: &#x27;Austria&#x27;,
+            Code: &#x27;AT&#x27;
+            },
+            {
+            Name: &#x27;Azerbaijan&#x27;,
+            Code: &#x27;AZ&#x27;
+            },
+            {
+            Name: &#x27;Bahamas&#x27;,
+            Code: &#x27;BS&#x27;
+            },
+            {
+            Name: &#x27;Bahrain&#x27;,
+            Code: &#x27;BH&#x27;
+            },
+            {
+            Name: &#x27;Bangladesh&#x27;,
+            Code: &#x27;BD&#x27;
+            },
+            {
+            Name: &#x27;Barbados&#x27;,
+            Code: &#x27;BB&#x27;
+            },
+            {
+            Name: &#x27;Belarus&#x27;,
+            Code: &#x27;BY&#x27;
+            },
+            {
+            Name: &#x27;Belgium&#x27;,
+            Code: &#x27;BE&#x27;
+            },
+            {
+            Name: &#x27;Belize&#x27;,
+            Code: &#x27;BZ&#x27;
+            },
+            {
+            Name: &#x27;Benin&#x27;,
+            Code: &#x27;BJ&#x27;
+            },
+            {
+            Name: &#x27;Bermuda&#x27;,
+            Code: &#x27;BM&#x27;
+            },
+            {
+            Name: &#x27;Bhutan&#x27;,
+            Code: &#x27;BT&#x27;
+            },
+            {
+            Name: &#x27;Bolivia, Plurinational State of&#x27;,
+            Code: &#x27;BO&#x27;
+            },
+            {
+            Name: &#x27;Bonaire, Sint Eustatius and Saba&#x27;,
+            Code: &#x27;BQ&#x27;
+            },
+            {
+            Name: &#x27;Bosnia and Herzegovina&#x27;,
+            Code: &#x27;BA&#x27;
+            },
+            {
+            Name: &#x27;Botswana&#x27;,
+            Code: &#x27;BW&#x27;
+            },
+            {
+            Name: &#x27;Bouvet Island&#x27;,
+            Code: &#x27;BV&#x27;
+            },
+            {
+            Name: &#x27;Brazil&#x27;,
+            Code: &#x27;BR&#x27;
+            },
+            {
+            Name: &#x27;British Indian Ocean Territory&#x27;,
+            Code: &#x27;IO&#x27;
+            },
+            {
+            Name: &#x27;Brunei Darussalam&#x27;,
+            Code: &#x27;BN&#x27;
+            },
+            {
+            Name: &#x27;Bulgaria&#x27;,
+            Code: &#x27;BG&#x27;
+            },
+            {
+            Name: &#x27;Burkina Faso&#x27;,
+            Code: &#x27;BF&#x27;
+            },
+            {
+            Name: &#x27;Burundi&#x27;,
+            Code: &#x27;BI&#x27;
+            },
+            {
+            Name: &#x27;Cambodia&#x27;,
+            Code: &#x27;KH&#x27;
+            },
+            {
+            Name: &#x27;Cameroon&#x27;,
+            Code: &#x27;CM&#x27;
+            },
+            {
+            Name: &#x27;Canada&#x27;,
+            Code: &#x27;CA&#x27;
+            },
+            {
+            Name: &#x27;Cape Verde&#x27;,
+            Code: &#x27;CV&#x27;
+            },
+            {
+            Name: &#x27;Cayman Islands&#x27;,
+            Code: &#x27;KY&#x27;
+            },
+            {
+            Name: &#x27;Central African Republic&#x27;,
+            Code: &#x27;CF&#x27;
+            },
+            {
+            Name: &#x27;Chad&#x27;,
+            Code: &#x27;TD&#x27;
+            },
+            {
+            Name: &#x27;Chile&#x27;,
+            Code: &#x27;CL&#x27;
+            },
+            {
+            Name: &#x27;China&#x27;,
+            Code: &#x27;CN&#x27;
+            },
+            {
+            Name: &#x27;Christmas Island&#x27;,
+            Code: &#x27;CX&#x27;
+            },
+            {
+            Name: &#x27;Cocos (Keeling) Islands&#x27;,
+            Code: &#x27;CC&#x27;
+            },
+            {
+            Name: &#x27;Colombia&#x27;,
+            Code: &#x27;CO&#x27;
+            },
+            {
+            Name: &#x27;Comoros&#x27;,
+            Code: &#x27;KM&#x27;
+            },
+            {
+            Name: &#x27;Congo&#x27;,
+            Code: &#x27;CG&#x27;
+            },
+            {
+            Name: &#x27;Congo, the Democratic Republic of the&#x27;,
+            Code: &#x27;CD&#x27;
+            },
+            {
+            Name: &#x27;Cook Islands&#x27;,
+            Code: &#x27;CK&#x27;
+            },
+            {
+            Name: &#x27;Costa Rica&#x27;,
+            Code: &#x27;CR&#x27;
+            },
+            {
+            Name: &#x27;Côte d\&#x27;Ivoire&#x27;,
+            Code: &#x27;CI&#x27;
+            },
+            {
+            Name: &#x27;Croatia&#x27;,
+            Code: &#x27;HR&#x27;
+            },
+            {
+            Name: &#x27;Cuba&#x27;,
+            Code: &#x27;CU&#x27;
+            },
+            {
+            Name: &#x27;Curaçao&#x27;,
+            Code: &#x27;CW&#x27;
+            },
+            {
+            Name: &#x27;Cyprus&#x27;,
+            Code: &#x27;CY&#x27;
+            },
+            {
+            Name: &#x27;Czech Republic&#x27;,
+            Code: &#x27;CZ&#x27;
+            },
+            {
+            Name: &#x27;Denmark&#x27;,
+            Code: &#x27;DK&#x27;
+            },
+            {
+            Name: &#x27;Djibouti&#x27;,
+            Code: &#x27;DJ&#x27;
+            },
+            {
+            Name: &#x27;Dominica&#x27;,
+            Code: &#x27;DM&#x27;
+            },
+            {
+            Name: &#x27;Dominican Republic&#x27;,
+            Code: &#x27;DO&#x27;
+            },
+            {
+            Name: &#x27;Ecuador&#x27;,
+            Code: &#x27;EC&#x27;
+            },
+            {
+            Name: &#x27;Egypt&#x27;,
+            Code: &#x27;EG&#x27;
+            },
+            {
+            Name: &#x27;El Salvador&#x27;,
+            Code: &#x27;SV&#x27;
+            },
+            {
+            Name: &#x27;Equatorial Guinea&#x27;,
+            Code: &#x27;GQ&#x27;
+            },
+            {
+            Name: &#x27;Eritrea&#x27;,
+            Code: &#x27;ER&#x27;
+            },
+            {
+            Name: &#x27;Estonia&#x27;,
+            Code: &#x27;EE&#x27;
+            },
+            {
+            Name: &#x27;Ethiopia&#x27;,
+            Code: &#x27;ET&#x27;
+            },
+            {
+            Name: &#x27;Falkland Islands (Malvinas)&#x27;,
+            Code: &#x27;FK&#x27;
+            },
+            {
+            Name: &#x27;Faroe Islands&#x27;,
+            Code: &#x27;FO&#x27;
+            },
+            {
+            Name: &#x27;Fiji&#x27;,
+            Code: &#x27;FJ&#x27;
+            },
+            {
+            Name: &#x27;Finland&#x27;,
+            Code: &#x27;FI&#x27;
+            },
+            {
+            Name: &#x27;France&#x27;,
+            Code: &#x27;FR&#x27;
+            },
+            {
+            Name: &#x27;French Guiana&#x27;,
+            Code: &#x27;GF&#x27;
+            },
+            {
+            Name: &#x27;French Polynesia&#x27;,
+            Code: &#x27;PF&#x27;
+            },
+            {
+            Name: &#x27;French Southern Territories&#x27;,
+            Code: &#x27;TF&#x27;
+            },
+            {
+            Name: &#x27;Gabon&#x27;,
+            Code: &#x27;GA&#x27;
+            },
+            {
+            Name: &#x27;Gambia&#x27;,
+            Code: &#x27;GM&#x27;
+            },
+            {
+            Name: &#x27;Georgia&#x27;,
+            Code: &#x27;GE&#x27;
+            },
+            {
+            Name: &#x27;Germany&#x27;,
+            Code: &#x27;DE&#x27;
+            },
+            {
+            Name: &#x27;Ghana&#x27;,
+            Code: &#x27;GH&#x27;
+            },
+            {
+            Name: &#x27;Gibraltar&#x27;,
+            Code: &#x27;GI&#x27;
+            },
+            {
+            Name: &#x27;Greece&#x27;,
+            Code: &#x27;GR&#x27;
+            },
+            {
+            Name: &#x27;Greenland&#x27;,
+            Code: &#x27;GL&#x27;
+            },
+            {
+            Name: &#x27;Grenada&#x27;,
+            Code: &#x27;GD&#x27;
+            },
+            {
+            Name: &#x27;Guadeloupe&#x27;,
+            Code: &#x27;GP&#x27;
+            },
+            {
+            Name: &#x27;Guam&#x27;,
+            Code: &#x27;GU&#x27;
+            },
+            {
+            Name: &#x27;Guatemala&#x27;,
+            Code: &#x27;GT&#x27;
+            },
+            {
+            Name: &#x27;Guernsey&#x27;,
+            Code: &#x27;GG&#x27;
+            },
+            {
+            Name: &#x27;Guinea&#x27;,
+            Code: &#x27;GN&#x27;
+            },
+            {
+            Name: &#x27;Guinea-Bissau&#x27;,
+            Code: &#x27;GW&#x27;
+            },
+            {
+            Name: &#x27;Guyana&#x27;,
+            Code: &#x27;GY&#x27;
+            },
+            {
+            Name: &#x27;Haiti&#x27;,
+            Code: &#x27;HT&#x27;
+            },
+            {
+            Name: &#x27;Heard Island and McDonald Islands&#x27;,
+            Code: &#x27;HM&#x27;
+            },
+            {
+            Name: &#x27;Holy See (Vatican City State)&#x27;,
+            Code: &#x27;VA&#x27;
+            },
+            {
+            Name: &#x27;Honduras&#x27;,
+            Code: &#x27;HN&#x27;
+            },
+            {
+            Name: &#x27;Hong Kong&#x27;,
+            Code: &#x27;HK&#x27;
+            },
+            {
+            Name: &#x27;Hungary&#x27;,
+            Code: &#x27;HU&#x27;
+            },
+            {
+            Name: &#x27;Iceland&#x27;,
+            Code: &#x27;IS&#x27;
+            },
+            {
+            Name: &#x27;India&#x27;,
+            Code: &#x27;IN&#x27;
+            },
+            {
+            Name: &#x27;Indonesia&#x27;,
+            Code: &#x27;ID&#x27;
+            },
+            {
+            Name: &#x27;Iran, Islamic Republic of&#x27;,
+            Code: &#x27;IR&#x27;
+            },
+            {
+            Name: &#x27;Iraq&#x27;,
+            Code: &#x27;IQ&#x27;
+            },
+            {
+            Name: &#x27;Ireland&#x27;,
+            Code: &#x27;IE&#x27;
+            },
+            {
+            Name: &#x27;Isle of Man&#x27;,
+            Code: &#x27;IM&#x27;
+            },
+            {
+            Name: &#x27;Israel&#x27;,
+            Code: &#x27;IL&#x27;
+            },
+            {
+            Name: &#x27;Italy&#x27;,
+            Code: &#x27;IT&#x27;
+            },
+            {
+            Name: &#x27;Jamaica&#x27;,
+            Code: &#x27;JM&#x27;
+            },
+            {
+            Name: &#x27;Japan&#x27;,
+            Code: &#x27;JP&#x27;
+            },
+            {
+            Name: &#x27;Jersey&#x27;,
+            Code: &#x27;JE&#x27;
+            },
+            {
+            Name: &#x27;Jordan&#x27;,
+            Code: &#x27;JO&#x27;
+            },
+            {
+            Name: &#x27;Kazakhstan&#x27;,
+            Code: &#x27;KZ&#x27;
+            },
+            {
+            Name: &#x27;Kenya&#x27;,
+            Code: &#x27;KE&#x27;
+            },
+            {
+            Name: &#x27;Kiribati&#x27;,
+            Code: &#x27;KI&#x27;
+            },
+            {
+            Name: &#x27;Korea, Democratic People\&#x27;s Republic of&#x27;,
+            Code: &#x27;KP&#x27;
+            },
+            {
+            Name: &#x27;Korea, Republic of&#x27;,
+            Code: &#x27;KR&#x27;
+            },
+            {
+            Name: &#x27;Kuwait&#x27;,
+            Code: &#x27;KW&#x27;
+            },
+            {
+            Name: &#x27;Kyrgyzstan&#x27;,
+            Code: &#x27;KG&#x27;
+            },
+            {
+            Name: &#x27;Lao People\&#x27;s Democratic Republic&#x27;,
+            Code: &#x27;LA&#x27;
+            },
+            {
+            Name: &#x27;Latvia&#x27;,
+            Code: &#x27;LV&#x27;
+            },
+            {
+            Name: &#x27;Lebanon&#x27;,
+            Code: &#x27;LB&#x27;
+            },
+            {
+            Name: &#x27;Lesotho&#x27;,
+            Code: &#x27;LS&#x27;
+            },
+            {
+            Name: &#x27;Liberia&#x27;,
+            Code: &#x27;LR&#x27;
+            },
+            {
+            Name: &#x27;Libya&#x27;,
+            Code: &#x27;LY&#x27;
+            },
+            {
+            Name: &#x27;Liechtenstein&#x27;,
+            Code: &#x27;LI&#x27;
+            },
+            {
+            Name: &#x27;Lithuania&#x27;,
+            Code: &#x27;LT&#x27;
+            },
+            {
+            Name: &#x27;Luxembourg&#x27;,
+            Code: &#x27;LU&#x27;
+            },
+            {
+            Name: &#x27;Macao&#x27;,
+            Code: &#x27;MO&#x27;
+            },
+            {
+            Name: &#x27;Macedonia, the Former Yugoslav Republic of&#x27;,
+            Code: &#x27;MK&#x27;
+            },
+            {
+            Name: &#x27;Madagascar&#x27;,
+            Code: &#x27;MG&#x27;
+            },
+            {
+            Name: &#x27;Malawi&#x27;,
+            Code: &#x27;MW&#x27;
+            },
+            {
+            Name: &#x27;Malaysia&#x27;,
+            Code: &#x27;MY&#x27;
+            },
+            {
+            Name: &#x27;Maldives&#x27;,
+            Code: &#x27;MV&#x27;
+            },
+            {
+            Name: &#x27;Mali&#x27;,
+            Code: &#x27;ML&#x27;
+            },
+            {
+            Name: &#x27;Malta&#x27;,
+            Code: &#x27;MT&#x27;
+            },
+            {
+            Name: &#x27;Marshall Islands&#x27;,
+            Code: &#x27;MH&#x27;
+            },
+            {
+            Name: &#x27;Martinique&#x27;,
+            Code: &#x27;MQ&#x27;
+            },
+            {
+            Name: &#x27;Mauritania&#x27;,
+            Code: &#x27;MR&#x27;
+            },
+            {
+            Name: &#x27;Mauritius&#x27;,
+            Code: &#x27;MU&#x27;
+            },
+            {
+            Name: &#x27;Mayotte&#x27;,
+            Code: &#x27;YT&#x27;
+            },
+            {
+            Name: &#x27;Mexico&#x27;,
+            Code: &#x27;MX&#x27;
+            },
+            {
+            Name: &#x27;Micronesia, Federated States of&#x27;,
+            Code: &#x27;FM&#x27;
+            },
+            {
+            Name: &#x27;Moldova, Republic of&#x27;,
+            Code: &#x27;MD&#x27;
+            },
+            {
+            Name: &#x27;Monaco&#x27;,
+            Code: &#x27;MC&#x27;
+            },
+            {
+            Name: &#x27;Mongolia&#x27;,
+            Code: &#x27;MN&#x27;
+            },
+            {
+            Name: &#x27;Montenegro&#x27;,
+            Code: &#x27;ME&#x27;
+            },
+            {
+            Name: &#x27;Montserrat&#x27;,
+            Code: &#x27;MS&#x27;
+            },
+            {
+            Name: &#x27;Morocco&#x27;,
+            Code: &#x27;MA&#x27;
+            },
+            {
+            Name: &#x27;Mozambique&#x27;,
+            Code: &#x27;MZ&#x27;
+            },
+            {
+            Name: &#x27;Myanmar&#x27;,
+            Code: &#x27;MM&#x27;
+            },
+            {
+            Name: &#x27;Namibia&#x27;,
+            Code: &#x27;NA&#x27;
+            },
+            {
+            Name: &#x27;Nauru&#x27;,
+            Code: &#x27;NR&#x27;
+            },
+            {
+            Name: &#x27;Nepal&#x27;,
+            Code: &#x27;NP&#x27;
+            },
+            {
+            Name: &#x27;Netherlands&#x27;,
+            Code: &#x27;NL&#x27;
+            },
+            {
+            Name: &#x27;New Caledonia&#x27;,
+            Code: &#x27;NC&#x27;
+            },
+            {
+            Name: &#x27;New Zealand&#x27;,
+            Code: &#x27;NZ&#x27;
+            },
+            {
+            Name: &#x27;Nicaragua&#x27;,
+            Code: &#x27;NI&#x27;
+            },
+            {
+            Name: &#x27;Niger&#x27;,
+            Code: &#x27;NE&#x27;
+            },
+            {
+            Name: &#x27;Nigeria&#x27;,
+            Code: &#x27;NG&#x27;
+            },
+            {
+            Name: &#x27;Niue&#x27;,
+            Code: &#x27;NU&#x27;
+            },
+            {
+            Name: &#x27;Norfolk Island&#x27;,
+            Code: &#x27;NF&#x27;
+            },
+            {
+            Name: &#x27;Northern Mariana Islands&#x27;,
+            Code: &#x27;MP&#x27;
+            },
+            {
+            Name: &#x27;Norway&#x27;,
+            Code: &#x27;NO&#x27;
+            },
+            {
+            Name: &#x27;Oman&#x27;,
+            Code: &#x27;OM&#x27;
+            },
+            {
+            Name: &#x27;Pakistan&#x27;,
+            Code: &#x27;PK&#x27;
+            },
+            {
+            Name: &#x27;Palau&#x27;,
+            Code: &#x27;PW&#x27;
+            },
+            {
+            Name: &#x27;Palestine, State of&#x27;,
+            Code: &#x27;PS&#x27;
+            },
+            {
+            Name: &#x27;Panama&#x27;,
+            Code: &#x27;PA&#x27;
+            },
+            {
+            Name: &#x27;Papua New Guinea&#x27;,
+            Code: &#x27;PG&#x27;
+            },
+            {
+            Name: &#x27;Paraguay&#x27;,
+            Code: &#x27;PY&#x27;
+            },
+            {
+            Name: &#x27;Peru&#x27;,
+            Code: &#x27;PE&#x27;
+            },
+            {
+            Name: &#x27;Philippines&#x27;,
+            Code: &#x27;PH&#x27;
+            },
+            {
+            Name: &#x27;Pitcairn&#x27;,
+            Code: &#x27;PN&#x27;
+            },
+            {
+            Name: &#x27;Poland&#x27;,
+            Code: &#x27;PL&#x27;
+            },
+            {
+            Name: &#x27;Portugal&#x27;,
+            Code: &#x27;PT&#x27;
+            },
+            {
+            Name: &#x27;Puerto Rico&#x27;,
+            Code: &#x27;PR&#x27;
+            },
+            {
+            Name: &#x27;Qatar&#x27;,
+            Code: &#x27;QA&#x27;
+            },
+            {
+            Name: &#x27;Réunion&#x27;,
+            Code: &#x27;RE&#x27;
+            },
+            {
+            Name: &#x27;Romania&#x27;,
+            Code: &#x27;RO&#x27;
+            },
+            {
+            Name: &#x27;Russian Federation&#x27;,
+            Code: &#x27;RU&#x27;
+            },
+            {
+            Name: &#x27;Rwanda&#x27;,
+            Code: &#x27;RW&#x27;
+            },
+            {
+            Name: &#x27;Saint Barthélemy&#x27;,
+            Code: &#x27;BL&#x27;
+            },
+            {
+            Name: &#x27;Saint Helena, Ascension and Tristan da Cunha&#x27;,
+            Code: &#x27;SH&#x27;
+            },
+            {
+            Name: &#x27;Saint Kitts and Nevis&#x27;,
+            Code: &#x27;KN&#x27;
+            },
+            {
+            Name: &#x27;Saint Lucia&#x27;,
+            Code: &#x27;LC&#x27;
+            },
+            {
+            Name: &#x27;Saint Martin (French part)&#x27;,
+            Code: &#x27;MF&#x27;
+            },
+            {
+            Name: &#x27;Saint Pierre and Miquelon&#x27;,
+            Code: &#x27;PM&#x27;
+            },
+            {
+            Name: &#x27;Saint Vincent and the Grenadines&#x27;,
+            Code: &#x27;VC&#x27;
+            },
+            {
+            Name: &#x27;Samoa&#x27;,
+            Code: &#x27;WS&#x27;
+            },
+            {
+            Name: &#x27;San Marino&#x27;,
+            Code: &#x27;SM&#x27;
+            },
+            {
+            Name: &#x27;Sao Tome and Principe&#x27;,
+            Code: &#x27;ST&#x27;
+            },
+            {
+            Name: &#x27;Saudi Arabia&#x27;,
+            Code: &#x27;SA&#x27;
+            },
+            {
+            Name: &#x27;Senegal&#x27;,
+            Code: &#x27;SN&#x27;
+            },
+            {
+            Name: &#x27;Serbia&#x27;,
+            Code: &#x27;RS&#x27;
+            },
+            {
+            Name: &#x27;Seychelles&#x27;,
+            Code: &#x27;SC&#x27;
+            },
+            {
+            Name: &#x27;Sierra Leone&#x27;,
+            Code: &#x27;SL&#x27;
+            },
+            {
+            Name: &#x27;Singapore&#x27;,
+            Code: &#x27;SG&#x27;
+            },
+            {
+            Name: &#x27;Sint Maarten (Dutch part)&#x27;,
+            Code: &#x27;SX&#x27;
+            },
+            {
+            Name: &#x27;Slovakia&#x27;,
+            Code: &#x27;SK&#x27;
+            },
+            {
+            Name: &#x27;Slovenia&#x27;,
+            Code: &#x27;SI&#x27;
+            },
+            {
+            Name: &#x27;Solomon Islands&#x27;,
+            Code: &#x27;SB&#x27;
+            },
+            {
+            Name: &#x27;Somalia&#x27;,
+            Code: &#x27;SO&#x27;
+            },
+            {
+            Name: &#x27;South Africa&#x27;,
+            Code: &#x27;ZA&#x27;
+            },
+            {
+            Name: &#x27;South Georgia and the South Sandwich Islands&#x27;,
+            Code: &#x27;GS&#x27;
+            },
+            {
+            Name: &#x27;South Sudan&#x27;,
+            Code: &#x27;SS&#x27;
+            },
+            {
+            Name: &#x27;Spain&#x27;,
+            Code: &#x27;ES&#x27;
+            },
+            {
+            Name: &#x27;Sri Lanka&#x27;,
+            Code: &#x27;LK&#x27;
+            },
+            {
+            Name: &#x27;Sudan&#x27;,
+            Code: &#x27;SD&#x27;
+            },
+            {
+            Name: &#x27;Suriname&#x27;,
+            Code: &#x27;SR&#x27;
+            },
+            {
+            Name: &#x27;Svalbard and Jan Mayen&#x27;,
+            Code: &#x27;SJ&#x27;
+            },
+            {
+            Name: &#x27;Swaziland&#x27;,
+            Code: &#x27;SZ&#x27;
+            },
+            {
+            Name: &#x27;Sweden&#x27;,
+            Code: &#x27;SE&#x27;
+            },
+            {
+            Name: &#x27;Switzerland&#x27;,
+            Code: &#x27;CH&#x27;
+            },
+            {
+            Name: &#x27;Syrian Arab Republic&#x27;,
+            Code: &#x27;SY&#x27;
+            },
+            {
+            Name: &#x27;Taiwan, Province of China&#x27;,
+            Code: &#x27;TW&#x27;
+            },
+            {
+            Name: &#x27;Tajikistan&#x27;,
+            Code: &#x27;TJ&#x27;
+            },
+            {
+            Name: &#x27;Tanzania, United Republic of&#x27;,
+            Code: &#x27;TZ&#x27;
+            },
+            {
+            Name: &#x27;Thailand&#x27;,
+            Code: &#x27;TH&#x27;
+            },
+            {
+            Name: &#x27;Timor-Leste&#x27;,
+            Code: &#x27;TL&#x27;
+            },
+            {
+            Name: &#x27;Togo&#x27;,
+            Code: &#x27;TG&#x27;
+            },
+            {
+            Name: &#x27;Tokelau&#x27;,
+            Code: &#x27;TK&#x27;
+            },
+            {
+            Name: &#x27;Tonga&#x27;,
+            Code: &#x27;TO&#x27;
+            },
+            {
+            Name: &#x27;Trinidad and Tobago&#x27;,
+            Code: &#x27;TT&#x27;
+            },
+            {
+            Name: &#x27;Tunisia&#x27;,
+            Code: &#x27;TN&#x27;
+            },
+            {
+            Name: &#x27;Turkey&#x27;,
+            Code: &#x27;TR&#x27;
+            },
+            {
+            Name: &#x27;Turkmenistan&#x27;,
+            Code: &#x27;TM&#x27;
+            },
+            {
+            Name: &#x27;Turks and Caicos Islands&#x27;,
+            Code: &#x27;TC&#x27;
+            },
+            {
+            Name: &#x27;Tuvalu&#x27;,
+            Code: &#x27;TV&#x27;
+            },
+            {
+            Name: &#x27;Uganda&#x27;,
+            Code: &#x27;UG&#x27;
+            },
+            {
+            Name: &#x27;Ukraine&#x27;,
+            Code: &#x27;UA&#x27;
+            },
+            {
+            Name: &#x27;United Arab Emirates&#x27;,
+            Code: &#x27;AE&#x27;
+            },
+            {
+            Name: &#x27;United Kingdom&#x27;,
+            Code: &#x27;GB&#x27;
+            },
+            {
+            Name: &#x27;United States&#x27;,
+            Code: &#x27;US&#x27;
+            },
+            {
+            Name: &#x27;United States Minor Outlying Islands&#x27;,
+            Code: &#x27;UM&#x27;
+            },
+            {
+            Name: &#x27;Uruguay&#x27;,
+            Code: &#x27;UY&#x27;
+            },
+            {
+            Name: &#x27;Uzbekistan&#x27;,
+            Code: &#x27;UZ&#x27;
+            },
+            {
+            Name: &#x27;Vanuatu&#x27;,
+            Code: &#x27;VU&#x27;
+            },
+            {
+            Name: &#x27;Venezuela, Bolivarian Republic of&#x27;,
+            Code: &#x27;VE&#x27;
+            },
+            {
+            Name: &#x27;Viet Nam&#x27;,
+            Code: &#x27;VN&#x27;
+            },
+            {
+            Name: &#x27;Virgin Islands, British&#x27;,
+            Code: &#x27;VG&#x27;
+            },
+            {
+            Name: &#x27;Virgin Islands, U.S.&#x27;,
+            Code: &#x27;VI&#x27;
+            },
+            {
+            Name: &#x27;Wallis and Futuna&#x27;,
+            Code: &#x27;WF&#x27;
+            },
+            {
+            Name: &#x27;Western Sahara&#x27;,
+            Code: &#x27;EH&#x27;
+            },
+            {
+            Name: &#x27;Yemen&#x27;,
+            Code: &#x27;YE&#x27;
+            },
+            {
+            Name: &#x27;Zambia&#x27;,
+            Code: &#x27;ZM&#x27;
+            },
+            {
+            Name: &#x27;Zimbabwe&#x27;,
+            Code: &#x27;ZW&#x27;
+            }
+            ];
+    }
+
+    // Types options
+
+    TypesOptions() {
+        return [
+            &#x27;(cities)&#x27;,
+            &#x27;(regions)&#x27;,
+            &#x27;country&#x27;,
+            &#x27;postal_code&#x27;,
+            &#x27;sublocality&#x27;,
+            &#x27;establishment&#x27;,
+            &#x27;address&#x27;,
+            &#x27;geocode&#x27;
+        ];
+    }
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/highlight.pack.js"></script>
+       <script src="../js/libs/highlightjs-line-numbers.min.js"></script>
+       <script src="../js/search/search_index.js"></script>
+       <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            });
+       </script>
+
+    </body>
+</html>
