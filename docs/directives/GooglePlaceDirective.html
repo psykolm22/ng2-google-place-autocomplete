@@ -1,0 +1,1028 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng2-google-place-autocomplete documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng2-google-place-autocomplete documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../">ng2-google-place-autocomplete documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="./modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/GooglePlaceModule.html" >GooglePlaceModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-directives-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/GooglePlaceDirective.html"  class="active" >GooglePlaceDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Address.html" >Address</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AddressComponent.html" >AddressComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AutoCompleteOptionsClass.html" >AutoCompleteOptionsClass</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ComponentRestrictions.html" >ComponentRestrictions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Coordonate.html" >Coordonate</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Location.html" >Location</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Photos.html" >Photos</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/GooglePlaceService.html" >GooglePlaceService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../">ng2-google-place-autocomplete documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="./modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/GooglePlaceModule.html" >GooglePlaceModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#directives-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/GooglePlaceDirective.html"  class="active" >GooglePlaceDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Address.html" >Address</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AddressComponent.html" >AddressComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AutoCompleteOptionsClass.html" >AutoCompleteOptionsClass</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ComponentRestrictions.html" >ComponentRestrictions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Coordonate.html" >Coordonate</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Location.html" >Location</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Photos.html" >Photos</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/GooglePlaceService.html" >GooglePlaceService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/compodoc/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content directive">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+  <li>Directives</li>
+  <li>GooglePlaceDirective</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/ng2-google-place.directive.ts</code>
+        </p>
+
+
+
+        <section>
+            <h3>Metadata</h3>
+            <table class="table table-sm table-hover">
+                <tbody>
+
+                    <tr>
+                        <td class="col-md-3">selector</td>
+                        <td class="col-md-9"><code>[ng2-google-place-autocomplete]</code></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+            <section>
+                <h3 id="inputs">Inputs</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>options</code>
+                                </td>
+                                <td class="col-md-10">
+                                      <p>
+                                        <em>Type:</em>    <code>any</code>
+
+                                      </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                <h3 id="outputs">Outputs</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>adr_address</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>city</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>country</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>CountryCodes</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>district</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>formatted_address</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>lat</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>lng</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>name</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>photos</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>place_id</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>postal_code</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>setAddress</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>state</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>street</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>street_number</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>types</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>url</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>utc_offset</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <code>vicinity</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(el: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a>, service: <a href="../injectables/GooglePlaceService.html" >GooglePlaceService</a>, ngZone: <a href="https://angular.io/docs/ts/latest/api/core/index/NgZone-class.html" target="_blank" >NgZone</a>)</code>
+                                </td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                <h3 id="methods">Methods</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> invokeEvent</b>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            <code>invokeEvent()</code>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description">
+                                            <b>Returns: </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> autocomplete</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>autocomplete:     <code>any</code>
+            </bcode>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> place</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>place:     <code><a href="../classes/Address.html" target="_self" >Address</a></code>
+            </bcode>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> trigger</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>trigger:     <code>any</code>
+            </bcode>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre><code class="hljs javascript">import {
+  Directive,
+  Input,
+  Output,
+  NgZone,
+  ElementRef,
+  EventEmitter,
+  OnInit
+} from &#x27;@angular/core&#x27;;
+import {GooglePlaceService} from &#x27;./ng2-google-place.service&#x27;;
+import {Address} from &#x27;./ng2-google-place.classes&#x27;;
+declare let google: any;
+
+@Directive({
+  selector: &#x27;[ng2-google-place-autocomplete]&#x27;,
+
+})
+export class GooglePlaceDirective implements OnInit {
+  @Input(&#x27;options&#x27;) options: any;
+
+  @Output() CountryCodes: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+
+  @Output() setAddress: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() street_number: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+
+  @Output() postal_code: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() country: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() lat: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() lng: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() adr_address: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() formatted_address: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() name: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() place_id: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() types: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() url: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() utc_offset: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() vicinity: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() photos: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() street: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() city: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() state: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+  @Output() district: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+
+
+  /*
+   NOT USED YET
+   @Output() intersection: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() political: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() colloquial_area: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() ward: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() administrative_area_level_3: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() administrative_area_level_4: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() administrative_area_level_5: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality_level_1: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality_level_2: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality_level_3: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality_level_4: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() sublocality_level_5: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() neighborhood: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() premise: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() subpremise: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() natural_feature: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() airport: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() park: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() point_of_interest: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() floor: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() establishment: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() parking: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() post_box: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() room: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() postal_town: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() bus_station: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() train_station: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   @Output() transit_station: EventEmitter&lt;any&gt;  &#x3D; new EventEmitter();
+   */
+
+  autocomplete: any;
+
+  trigger: any;
+
+  place: Address;
+
+  constructor(private el: ElementRef, private service: GooglePlaceService, private ngZone: NgZone) {
+
+  }
+
+  ngOnInit() {
+
+    this.CountryCodes.emit(this.service.countryIsoCode());
+
+
+    this.autocomplete &#x3D; new google.maps.places.Autocomplete(this.el.nativeElement, this.options);
+    this.trigger &#x3D; this.autocomplete.addListener(&#x27;place_changed&#x27;, () &#x3D;&gt; {
+      this.ngZone.run(() &#x3D;&gt; {
+        this.place &#x3D; this.autocomplete.getPlace();
+        if (this.place &amp;&amp; this.place.place_id) {
+          this.invokeEvent();
+        }
+      });
+    });
+  }
+
+
+  invokeEvent() {
+    this.setAddress.emit(this.place);
+
+    this.street_number.emit(this.service.street_number(this.place.address_components) ?
+      this.service.street_number(this.place.address_components) :
+      null);
+    this.street.emit(this.service.street(this.place.address_components) ?
+      this.service.street(this.place.address_components) :
+      null);
+    this.city.emit(this.service.city(this.place.address_components) ?
+      this.service.city(this.place.address_components) :
+      null);
+    this.state.emit(this.service.state(this.place.address_components) ?
+      this.service.state(this.place.address_components) :
+      null);
+    this.country.emit(this.service.country(this.place.address_components) ?
+      this.service.country(this.place.address_components) :
+      null);
+    this.postal_code.emit(this.service.postal_code(this.place.address_components) ?
+      this.service.postal_code(this.place.address_components) :
+      null);
+    this.district.emit(this.service.administrative_area_level_2(this.place.address_components) ?
+      this.service.administrative_area_level_2(this.place.address_components) :
+      null);
+    this.lat.emit(this.place.geometry.location.lat() ?
+      this.place.geometry.location.lat() :
+      null);
+    this.lng.emit(this.place.geometry.location.lng() ?
+      this.place.geometry.location.lng() :
+      null);
+    this.adr_address.emit(this.place.adr_address ?
+      this.place.adr_address :
+      null);
+    this.formatted_address.emit(this.place.formatted_address ?
+      this.place.formatted_address :
+      null);
+    this.name.emit(this.place.name ?
+      this.place.name :
+      null);
+    this.place_id.emit(this.place.place_id ?
+      this.place.place_id :
+      null);
+    this.types.emit(this.place.types ?
+      this.place.types :
+      null);
+    this.url.emit(this.place.url ?
+      this.place.url :
+      null);
+    this.utc_offset.emit(this.place.utc_offset ?
+      this.place.utc_offset :
+      null);
+    this.vicinity.emit(this.place.vicinity ?
+      this.place.vicinity :
+      null);
+    this.photos.emit(this.place.photos ?
+      this.place.photos :
+      null);
+
+    /*
+     DEPRECATED SINCE 2014
+     this.place.id
+     reference
+     */
+
+
+    /*
+     NOT USED YET
+
+     this.intersection.emit(this.service.intersection(this.place.address_components) ? this.service.intersection(this.place.address_components) : null)
+     this.political.emit(this.service.political(this.place.address_components) ? this.service.political(this.place.address_components) : null)
+     this.colloquial_area.emit(this.service.colloquial_area(this.place.address_components) ? this.service.colloquial_area(this.place.address_components) : null)
+
+     this.ward.emit(this.service.ward(this.place.address_components) ? this.service.ward(this.place.address_components) : null)
+
+     this.administrative_area_level_3.emit(this.service.administrative_area_level_3(this.place.address_components) ? this.service.administrative_area_level_3(this.place.address_components) : null)
+     this.administrative_area_level_4.emit(this.service.administrative_area_level_4(this.place.address_components) ? this.service.administrative_area_level_4(this.place.address_components) : null)
+     this.administrative_area_level_5.emit(this.service.administrative_area_level_5(this.place.address_components) ? this.service.administrative_area_level_5(this.place.address_components) : null)
+
+     this.sublocality.emit(this.service.sublocality(this.place.address_components) ? this.service.sublocality(this.place.address_components) : null)
+     this.sublocality_level_1.emit(this.service.sublocality_level_1(this.place.address_components) ?
+     this.service.sublocality_level_1(this.place.address_components) : null);
+     this.sublocality_level_2.emit(this.service.sublocality_level_2(this.place.address_components) ?
+     this.service.sublocality_level_2(this.place.address_components) : null);
+     this.sublocality_level_3.emit(this.service.sublocality_level_3(this.place.address_components) ?
+     this.service.sublocality_level_3(this.place.address_components) : null);
+     this.sublocality_level_4.emit(this.service.sublocality_level_4(this.place.address_components) ?
+     this.service.sublocality_level_4(this.place.address_components) : null);
+     this.sublocality_level_5.emit(this.service.sublocality_level_5(this.place.address_components) ?
+     this.service.sublocality_level_5(this.place.address_components) : null);
+
+     this.neighborhood.emit(this.service.neighborhood(this.place.address_components) ? this.service.neighborhood(this.place.address_components) : null)
+     this.premise.emit(this.service.premise(this.place.address_components) ? this.service.premise(this.place.address_components) : null)
+     this.subpremise.emit(this.service.subpremise(this.place.address_components) ? this.service.subpremise(this.place.address_components) : null)
+     this.natural_feature.emit(this.service.natural_feature(this.place.address_components) ? this.service.natural_feature(this.place.address_components) : null)
+     this.airport.emit(this.service.airport(this.place.address_components) ? this.service.airport(this.place.address_components) : null)
+     this.park.emit(this.service.park(this.place.address_components) ? this.service.park(this.place.address_components) : null)
+     this.point_of_interest.emit(this.service.point_of_interest(this.place.address_components) ? this.service.point_of_interest(this.place.address_components) : null)
+     this.floor.emit(this.service.floor(this.place.address_components) ? this.service.floor(this.place.address_components) : null)
+     this.establishment.emit(this.service.establishment(this.place.address_components) ? this.service.establishment(this.place.address_components) : null)
+     this.parking.emit(this.service.parking(this.place.address_components) ? this.service.parking(this.place.address_components) : null)
+     this.post_box.emit(this.service.post_box(this.place.address_components) ? this.service.post_box(this.place.address_components) : null)
+     this.postal_town.emit(this.service.postal_town(this.place.address_components) ? this.service.postal_town(this.place.address_components) : null)
+     this.room.emit(this.service.room(this.place.address_components) ? this.service.room(this.place.address_components) : null)
+     this.bus_station.emit(this.service.bus_station(this.place.address_components) ? this.service.bus_station(this.place.address_components) : null)
+     this.train_station.emit(this.service.train_station(this.place.address_components) ? this.service.train_station(this.place.address_components) : null)
+     this.transit_station.emit(this.service.transit_station(this.place.address_components) ? this.service.transit_station(this.place.address_components) : null)
+     */
+  }
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/highlight.pack.js"></script>
+       <script src="../js/libs/highlightjs-line-numbers.min.js"></script>
+       <script src="../js/search/search_index.js"></script>
+       <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            });
+       </script>
+
+    </body>
+</html>
