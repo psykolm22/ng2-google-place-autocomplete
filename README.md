@@ -1,6 +1,5 @@
 # ng2-google-place-autocomplete
-Google-Autocomplete-Angular2 Directive/Component <br/>
-This is a Google-Autocomplete Directive/Component for Angular 2.
+This is a Google-Autocomplete Module for Angular.
 
 [![NPM](https://nodei.co/npm/ng2-google-place-autocomplete.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ng2-google-place-autocomplete/)
 
@@ -14,8 +13,7 @@ This is a Google-Autocomplete Directive/Component for Angular 2.
 Please feel free to declare issues or contribute  : https://github.com/psykolm22/ng2-google-place-autocomplete
 
 # What about next Improvements ? 
-- ~~Add support for [YARN](https://yarnpkg.com/)~~ => DONE
-
+Visit our [Board](https://github.com/psykolm22/ng2-google-place-autocomplete/projects/1)
 # Installation
 
 NPM
@@ -91,7 +89,7 @@ Options for Google Search
 * Safari
 
 
-#For previous version of Angular 1:
+#For AngularJS:
 https://github.com/vskosp/vsGoogleAutocomplete
 
 
