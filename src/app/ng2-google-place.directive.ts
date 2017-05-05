@@ -90,6 +90,11 @@ export class GooglePlaceDirective implements OnInit {
     this.CountryCodes.emit(this.service.countryIsoCode());
 
 
+    if (typeof google === 'undefined' ) {
+      console.error(`google place api is not loaded at this time, ng2-google-place-autocomplete won't work`);
+      return;
+    }
+
     this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, this.options);
     this.trigger = this.autocomplete.addListener('place_changed', () => {
       this.ngZone.run(() => {
