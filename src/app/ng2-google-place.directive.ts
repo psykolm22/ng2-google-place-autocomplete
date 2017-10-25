@@ -86,8 +86,19 @@ export class GooglePlaceDirective implements OnInit, OnChanges {
 
   }
   
+
   ngOnChanges(event: any) {
-    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, event.options.currentValue);
+    if (event.options.previousValue && event.options.currentValue) {
+      if (event.options.currentValue.componentRestrictions.country !== event.options.previousValue.componentRestrictions.country) {
+        this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, event.options.currentValue);
+        this.trigger = this.autocomplete.addListener('place_changed', () => {
+            this.place = this.autocomplete.getPlace();
+            if (this.place && this.place.place_id){
+            this.invokeEvent();
+          }
+        });
+      }
+    }
   }
 
   ngOnInit() {
