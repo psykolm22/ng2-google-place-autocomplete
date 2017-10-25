@@ -110,10 +110,12 @@ export class GooglePlaceDirective implements OnInit, OnChanges {
   setAutocompleteAndInvokeEvent(options: any) {
     this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, options);
     this.trigger = this.autocomplete.addListener('place_changed', () => {
-      this.place = this.autocomplete.getPlace();
-      if (this.place && this.place.place_id) {
-        this.invokeEvent();
-      }
+      this.ngZone.run(() => {
+        this.place = this.autocomplete.getPlace();
+        if (this.place && this.place.place_id) {
+          this.invokeEvent();
+        }
+      });
     });
   }
 
