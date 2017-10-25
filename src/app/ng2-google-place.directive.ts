@@ -5,7 +5,8 @@ import {
   NgZone,
   ElementRef,
   EventEmitter,
-  OnInit
+  OnInit,
+  OnChanges
 } from '@angular/core';
 import {GooglePlaceService} from './ng2-google-place.service';
 import {Address} from './ng2-google-place.classes';
@@ -15,7 +16,7 @@ declare let google: any;
   selector: '[ng2-google-place-autocomplete]',
 
 })
-export class GooglePlaceDirective implements OnInit {
+export class GooglePlaceDirective implements OnInit, OnChanges {
   @Input('options') options: any;
 
   @Output() CountryCodes: EventEmitter<any> = new EventEmitter();
@@ -83,6 +84,10 @@ export class GooglePlaceDirective implements OnInit {
 
   constructor(private el: ElementRef, private service: GooglePlaceService, private ngZone: NgZone) {
 
+  }
+  
+  ngOnChanges(event: any) {
+    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, event.options.currentValue);
   }
 
   ngOnInit() {
