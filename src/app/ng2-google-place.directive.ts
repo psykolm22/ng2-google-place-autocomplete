@@ -5,7 +5,8 @@ import {
   NgZone,
   ElementRef,
   EventEmitter,
-  OnInit
+  OnInit,
+  OnChanges
 } from '@angular/core';
 import {GooglePlaceService} from './ng2-google-place.service';
 import {Address} from './ng2-google-place.classes';
@@ -15,7 +16,7 @@ declare let google: any;
   selector: '[ng2-google-place-autocomplete]',
 
 })
-export class GooglePlaceDirective implements OnInit {
+export class GooglePlaceDirective implements OnInit, OnChanges {
   @Input('options') options: any;
 
   @Output() CountryCodes: EventEmitter<any> = new EventEmitter();
@@ -85,6 +86,14 @@ export class GooglePlaceDirective implements OnInit {
 
   }
 
+  ngOnChanges(event: any) {
+    if (event.options.previousValue && event.options.currentValue) {
+      if (event.options.currentValue.componentRestrictions.country !== event.options.previousValue.componentRestrictions.country) {
+        this.setAutocompleteAndInvokeEvent(event.options.currentValue);
+      }
+    }
+  }
+
   ngOnInit() {
 
     this.CountryCodes.emit(this.service.countryIsoCode());
@@ -95,7 +104,11 @@ export class GooglePlaceDirective implements OnInit {
       return;
     }
 
-    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, this.options);
+    this.setAutocompleteAndInvokeEvent(this.options);
+  }
+
+  setAutocompleteAndInvokeEvent(options: any) {
+    this.autocomplete = new google.maps.places.Autocomplete(this.el.nativeElement, options);
     this.trigger = this.autocomplete.addListener('place_changed', () => {
       this.ngZone.run(() => {
         this.place = this.autocomplete.getPlace();
