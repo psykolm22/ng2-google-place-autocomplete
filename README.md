@@ -1,3 +1,13 @@
+# DEPRECATED *** Use [angular-google-place](https://github.com/psykolm22/angular-google-place/) ***
+
+
+
+# Issues have been moved to new repo : [angular-google-place](https://github.com/psykolm22/angular-google-place/)
+# n2-google-place-autocomplete is now available as [angular-google-place](https://github.com/psykolm22/angular-google-place/)
+
+
+
+
 # ng2-google-place-autocomplete
 This is a Google-Autocomplete Module for Angular.
 
